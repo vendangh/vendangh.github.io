@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+    }
+    td {
+        text-align: right;
+      }
+    * {
+    box-sizing: border-box;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns_flex */
+  .column {
+    flex: 50%;
+    padding: 10px;
+  }
+
+  .bg {
+    /* The image used */
+    background-image: url("sky-414199_960_720.jpg");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  </style>
+  </head>
+  <body style="background-color:lightblue;font-family: sans-serif">
+  <h1>Luchtkwaliteit <a href="https://aqicn.org/station/@196279">NL-Zeegse</a></h1>
+  <h2>gegevens per Sunday 17 December 2023 14:51:39</h2>
+  <div class="bg">
+  <div class="row">
+    <div class="column">
+            <h1>5 dagen geleden tot nu</h1>
+            <p>
+                <table>
+                  <tr>
+                      <th>Datum/ Tijd</th>
+                      <th>Air Quality Index</th>
+                  </tr>
+<tr><th>Tue 12 Dec, 00u</th><td bgcolor="green"><font size="7">&#128512; 1</font></td></tr>
+<tr><th>Tue 12 Dec, 12u</th><td bgcolor="yellow"><font size="7">&#128527; 2</font></td></tr>
+<tr><th>Tue 12 Dec, 19u</th><td bgcolor="green"><font size="7">&#128512; 1</font></td></tr>
+<tr><th>Sun 17 Dec, 02u</th><td bgcolor="yellow"><font size="7">&#128527; 2</font></td></tr>
+<tr><th>Sun 17 Dec, 08u</th><td bgcolor="green"><font size="7">&#128512; 1</font></td></tr>
+<tr><th>Sun 17 Dec, 10u</th><td bgcolor="yellow"><font size="7">&#128527; 2</font></td></tr>
+<tr><th>Sun 17 Dec, 14u</th><td bgcolor="green"><font size="7">&#128512; 1</font></td></tr>
+</table></p></div>
+<div class="column">
+  <h1>Voorspelling</h1>
+<p>
+<table>
+<tr>
+<th>Datum/ Tijd</th>
+<th>Air Quality Index</th>
+</tr>
+<tr><th>Sun 17 Dec, 14u</th><td bgcolor="green"><font size="7">&#128512; 1</font></td></tr>
+<tr><th>Sun 17 Dec, 20u</th><td bgcolor="yellow"><font size="7">&#128527; 2</font></td></tr>
+<tr><th>Sun 17 Dec, 23u</th><td bgcolor="green"><font size="7">&#128512; 1</font></td></tr>
+<tr><th>Tue 19 Dec, 00u</th><td bgcolor="yellow"><font size="7">&#128527; 2</font></td></tr>
+<tr><th>Tue 19 Dec, 03u</th><td bgcolor="green"><font size="7">&#128512; 1</font></td></tr>
+<tr><th>Wed 20 Dec, 00u</th><td bgcolor="yellow"><font size="7">&#128527; 2</font></td></tr>
+<tr><th>Thu 21 Dec, 11u</th><td bgcolor="green"><font size="7">&#128512; 1</font></td></tr>
+<tr><th>Thu 21 Dec, 12u</th><td bgcolor="yellow"><font size="7">&#128527; 2</font></td></tr>
+</table></p></div>
+</ul>
+</div>
+</br>
+Data from: <a href="https://openweathermap.org/api/air-pollution">https://openweathermap.org/api/air-pollution</a>
+</body>
+</html>
